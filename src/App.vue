@@ -10,6 +10,8 @@
     <Parent31 />
     <h1>3-2. .sync</h1>
     <Parent32 />
+    <h1>3-4. アンチパターン</h1>
+    <ParentAnti />
   </div>
 </template>
 
@@ -20,6 +22,7 @@ import Parent2 from './components/2-emit/parent.vue'
 import Parent3 from './components/3-2way/parent.vue'
 import Parent31 from './components/31-v-model/parent.vue'
 import Parent32 from './components/32-sync/parent.vue'
+import ParentAnti from './components/34-anti/parent.vue'
 
 export default Vue.extend({
   name: 'App',
@@ -28,7 +31,8 @@ export default Vue.extend({
     Parent2,
     Parent3,
     Parent31,
-    Parent32
+    Parent32,
+    ParentAnti
   }
 })
 </script>
@@ -43,10 +47,11 @@ export default Vue.extend({
 }
 
 .parent {
-  margin: 1em;
+  margin: 1em auto;
   padding: 0 1em;
   border: 1px solid khaki;
   background-color: lightyellow;
+  max-width: 30em;
 }
 
 .child {
