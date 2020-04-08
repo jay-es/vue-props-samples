@@ -3,6 +3,7 @@ import App from './App.vue'
 import CompositionApi from '@vue/composition-api'
 
 Vue.config.productionTip = false
+Vue.config.devtools = true
 Vue.use(CompositionApi)
 
 new Vue({
